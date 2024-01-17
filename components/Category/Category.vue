@@ -6,7 +6,7 @@
           Browse By All Categories
         </div>
       </v-col>
-      <v-col :cols="$vuetify.display.xs ? 6 : 3" v-for="(cat, i) in categories" :key="i">
+      <v-col :cols="3" v-for="(cat, i) in categories" :key="i">
         <v-card
             class="mx-auto"
 
