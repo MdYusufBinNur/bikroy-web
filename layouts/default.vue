@@ -113,6 +113,7 @@
       <nuxt-page/>
     </v-main>
     <BottomNavigation v-if="$vuetify.display.smAndDown" />
+    <Footer v-if="$vuetify.display.mdAndUp" />
   </v-app>
 </template>
 
