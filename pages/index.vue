@@ -1,14 +1,16 @@
 <template>
-  <v-container :fluid="" class="pa-0">
+  <v-container :fluid="true" class="pa-0">
     <BlackCard title="Search here" />
     <v-container>
       <Category />
-
     </v-container>
-
     <v-container :fluid="true" class="mt-5" style="background-color: #e5e5e4">
       <Download />
     </v-container>
+    <div v-if="$vuetify.display.smAndUp">
+      <About  />
+    </div>
+
   </v-container>
 </template>
 
@@ -16,9 +18,10 @@
 import BlackCard from "../components/Common/BlackCard.vue";
 import Category from "../components/Category/Category.vue";
 import Download from "../components/Download/Download.vue";
+import About from "../components/About/About.vue";
 export default {
   name: "index",
-  components: {Download, Category, BlackCard},
+  components: {About, Download, Category, BlackCard},
   data() {
     return {
       cards: [

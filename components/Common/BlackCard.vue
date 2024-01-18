@@ -1,5 +1,5 @@
 <template>
-  <v-card :flat="true" class="px-0 txt" color="primary" :min-height="$vuetify.display.mdAndUp ? '200px' : '100px'"
+  <v-card :flat="true" class="px-0 txt" color="primary" :min-height="'200px'"
           style="border-radius: unset" >
 <!--    <div :class="$vuetify.display.mdAndUp ? 'text-h2' : 'text-h4'"  class="text-center fade-in-up text-capitalize" align="center" >-->
 <!--      {{ title }}-->

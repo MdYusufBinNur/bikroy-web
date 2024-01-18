@@ -6,10 +6,26 @@
           Browse By All Categories
         </div>
       </v-col>
-      <v-col :cols="3" v-for="(cat, i) in categories" :key="i">
+      <v-col  v-if="$vuetify.display.smAndUp" :cols="3" v-for="(cat, i) in categories" :key="i">
         <v-card
-            class="mx-auto"
-
+            :elevation="0">
+          <template v-slot:prepend>
+            <v-img :src="cat.image" width="40" :cover="true" />
+          </template>
+          <template v-slot:title>
+            <v-card-text class="pa-1">
+              {{cat.name}}
+            </v-card-text>
+          </template>
+          <template v-slot:subtitle>
+            <v-card-text class="pa-1">
+              {{cat.ads + ' ads'}}
+            </v-card-text>
+          </template>
+        </v-card>
+      </v-col>
+      <v-col  v-if="$vuetify.display.xs" :cols="6" v-for="(cat, i) in categories" :key="i">
+        <v-card
             :elevation="0"
         >
           <template v-slot:prepend>
@@ -27,6 +43,8 @@
           </template>
         </v-card>
       </v-col>
+
+
     </v-row>
 
   </v-container>

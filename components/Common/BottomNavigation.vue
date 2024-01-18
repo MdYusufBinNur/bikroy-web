@@ -17,10 +17,7 @@
       <v-icon>mdi-book-plus-outline</v-icon>
       <span>Post Ad</span>
     </v-btn>
-    <v-btn>
-      <v-icon>mdi-chat-outline</v-icon>
-      <span>Chat</span>
-    </v-btn>
+
     <v-btn>
       <v-icon>mdi-account-outline</v-icon>
       <span>Account</span>
