@@ -4,12 +4,13 @@
     <v-container>
       <Category />
     </v-container>
-    <v-container :fluid="true" class="mt-5" style="background-color: #e5e5e4">
-      <Download />
-    </v-container>
     <div v-if="$vuetify.display.smAndUp">
       <About  />
     </div>
+    <v-container :fluid="true" class="mt-5" style="background-color: #F1F2F2">
+      <Download />
+    </v-container>
+
 
   </v-container>
 </template>

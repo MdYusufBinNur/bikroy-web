@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-2 d-flex justify-center" >
+  <div class="pa-2 d-flex justify-center">
     <v-row>
       <v-col cols="12" md="6" sm="6">
         <v-img :src="mobile" :cover align="right" :aspect-ratio="2.5" />

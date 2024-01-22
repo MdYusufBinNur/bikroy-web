@@ -109,8 +109,8 @@
         </v-card>
       </v-card>
     </v-dialog>
-    <v-main class="bg-lighter">
-      <nuxt-page/>
+    <v-main class="bg-white">
+      <NuxtPage/>
     </v-main>
     <BottomNavigation v-if="$vuetify.display.smAndDown" />
     <Footer v-if="$vuetify.display.mdAndUp" />
@@ -147,7 +147,7 @@ export default {
       },
       {
         title: 'My Account',
-        to: '#',
+        to: '/auth/login',
       },
     ],
 

@@ -18,7 +18,7 @@ const myCustomLightTheme: ThemeDefinition = {
     dark: false,
     colors: {
         background: '#252525',
-        surface: '#EEECE8',
+        surface: '#FFFFFF',
         // primary: '#6200EE',
         'primary-darken-1': '#262626',
         // secondary: '#03DAC6',
@@ -30,8 +30,8 @@ const myCustomLightTheme: ThemeDefinition = {
         primary: '#252525',
         accent: '#252525',
         secondary: '#FFFFFF',
-        lighter: '#EEECE8',
-        darker: '#E4DFD4',
+        lighter: '#FFFFFF',
+        darker: '#FFFFFF',
     },
 }
 
