@@ -119,11 +119,11 @@
 
 <script>
 import Footer from "../components/Common/Footer.vue";
-import LogoSVG from "../assests/icons/LogoSVG.vue";
-import SearchSVG from "../assests/icons/SearchSVG.vue";
-import MenuSVG from "../assests/icons/MenuSVG.vue";
-import ArrowUpRightSVG from "../assests/icons/ArrowUpRightSVG.vue";
-import ShortLogoSVG from "../assests/icons/ShortLogoSVG.vue";
+import LogoSVG from "../assets/icons/LogoSVG.vue";
+import SearchSVG from "../assets/icons/SearchSVG.vue";
+import MenuSVG from "../assets/icons/MenuSVG.vue";
+import ArrowUpRightSVG from "../assets/icons/ArrowUpRightSVG.vue";
+import ShortLogoSVG from "../assets/icons/ShortLogoSVG.vue";
 import BottomNavigation from "../components/Common/BottomNavigation.vue";
 
 export default {

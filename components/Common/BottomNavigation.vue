@@ -1,11 +1,11 @@
 <template>
 
   <v-bottom-navigation
-      v-model="value"
+      v-model="data.value"
       :bg-color="'primary'"
       mode="shift"
   >
-    <v-btn>
+    <v-btn @click.prevent="$router.push('/')">
       <v-icon>mdi-home-outline</v-icon>
       <span>Home</span>
     </v-btn>
@@ -24,27 +24,14 @@
     </v-btn>
   </v-bottom-navigation>
 </template>
-<script>
-export default {
-  name: 'BottomNavigation',
-  data: () => ({value: 1}),
+<script setup lang="ts">
+import {ref, reactive,} from 'vue'
+const data = reactive({
+  value: 0
+})
 
-  computed: {
-    color() {
-      switch (this.value) {
-        case 0:
-          return 'blue-grey'
-        case 1:
-          return 'teal'
-        case 2:
-          return 'brown'
-        case 3:
-          return 'indigo'
-        default:
-          return 'blue-grey'
-      }
-    },
-  },
+const goto = () => {
+
 }
 </script>
 

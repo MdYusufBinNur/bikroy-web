@@ -3,7 +3,6 @@ import {resolve, dirname} from 'node:path'
 import {fileURLToPath} from 'url'
 import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
 
-
 export default defineNuxtConfig({
     build: {
         transpile: ['vuetify', 'vue-i18n'],
@@ -32,8 +31,10 @@ export default defineNuxtConfig({
         css: [
             '~/assets/css/main.css',
         ],
+        alias: {
+            assets : "/<rootDir>/assets"
+        }
     },
-
     runtimeConfig: {
         public: {
             title: 'Bikroy',
@@ -43,5 +44,4 @@ export default defineNuxtConfig({
         },
     },
     devtools: {enabled: false},
-
 })

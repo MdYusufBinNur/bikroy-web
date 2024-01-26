@@ -83,7 +83,9 @@ import {computed, reactive, ref} from "vue";
 
 import { required, email, sameAs, minLength, helpers } from '@vuelidate/validators';
 import { useVuelidate } from '@vuelidate/core';
+import {navigateTo, useRouter} from "nuxt/app";
 
+const router = useRouter()
 const rules = computed(() => {
   return {
     email: {
@@ -107,7 +109,8 @@ const formData = reactive({
 const v$ = useVuelidate(rules, formData);
 
 const submitForm = () => {
-  console.log(v$)
+
+  navigateTo('/dashboard')
   v$.value.$validate();
   if (!v$.value.$error) {
     //    Some code

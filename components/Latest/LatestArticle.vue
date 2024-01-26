@@ -49,7 +49,7 @@
 import img from '/latest/img.png'
 import img1 from '/latest/img_1.png'
 import img2 from '/latest/img_2.png'
-import ArrowUpRightSVG from "../../assests/icons/ArrowUpRightSVG.vue";
+import ArrowUpRightSVG from "../../assets/icons/ArrowUpRightSVG.vue";
 
 const latestDataset = [
   {

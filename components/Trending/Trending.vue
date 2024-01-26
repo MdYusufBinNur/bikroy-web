@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import ArrowUpRightSVG from "../../assests/icons/ArrowUpRightSVG.vue";
+import ArrowUpRightSVG from "../../assets/icons/ArrowUpRightSVG.vue";
 export default {
   name: "Trending",
   components: {ArrowUpRightSVG},
