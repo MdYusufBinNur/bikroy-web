@@ -1,8 +1,4 @@
 import vuetify, {transformAssetUrls} from 'vite-plugin-vuetify'
-import {resolve, dirname} from 'node:path'
-import {fileURLToPath} from 'url'
-import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
-
 export default defineNuxtConfig({
     build: {
         transpile: ['vuetify', 'vue-i18n'],
@@ -10,7 +6,6 @@ export default defineNuxtConfig({
     modules: [
         (_options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', (config) => {
-                // @ts-expect-error
                 config.plugins.push(vuetify({autoImport: true}))
             })
         },
@@ -21,19 +16,10 @@ export default defineNuxtConfig({
                 transformAssetUrls,
             },
         },
-        plugins: [
-            VueI18nVitePlugin({
-                include: [
-                    resolve(dirname(fileURLToPath(import.meta.url)), './locales/*.json')
-                ]
-            })
-        ],
+        plugins: [],
         css: [
             '~/assets/css/main.css',
         ],
-        alias: {
-            assets : "/<rootDir>/assets"
-        }
     },
     runtimeConfig: {
         public: {
